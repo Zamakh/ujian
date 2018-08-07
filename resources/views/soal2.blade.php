@@ -22,7 +22,6 @@
 			<div class="col-md-8">
 				<div class="well">
 					<form action="simpan" method="POST">
-						@csrf
 					  <div class="form-group">
 					    <input type="text" name="nama" class="form-control" placeholder="Nama" >
 					  </div>
@@ -57,7 +56,7 @@
 					    <input type="text" name="organisasi" class="form-control" placeholder="Organisasi" value="organisasi">
 					  </div>
 
-					  <!-- <input type="hidden" name="_token" value="{{csrf_token()}}"> -->
+					  <input type="hidden" name="_token" value="{{csrf_token()}}">
 
 					  <div align="right"> 
 					  		<button type="submit" class="btn btn-primary" name="submit">

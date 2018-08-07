@@ -15,6 +15,9 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/soal2', function(){
+/*Route::get('/soal2', function(){
 	return view('./soal2/soal2');
-});
+});*/
+
+Route::get('soal2', 'simpan_peserta@index');
+Route::post('simpan', 'simpan_peserta@store');

@@ -14,3 +14,7 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/soal2', function(){
+	return view('./soal2/soal2');
+});

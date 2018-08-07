@@ -54,7 +54,7 @@ class simpan_peserta extends Controller
 
         $peserta->save();
 
-        return view('soal2');
+        return redirect()->action('simpan_peserta@index');
     }
 
     /**

@@ -33,7 +33,7 @@
 					<hr> 
 					<br>
 					@if ($errors->any())
-	                  <div class="alert alert-danger">
+	                  <div class="alert alert-info">
 	                    <span class='fa fa-danger'></span>
 	                      <h2>Whoops!</h2>
 	                      <ul>

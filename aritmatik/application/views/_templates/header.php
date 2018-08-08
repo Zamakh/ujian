@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>SKKNI Soal 1</title>
+	<title>Perhitungan Ala Kadar</title>
 
 
 	<style type="text/css">

@@ -30,7 +30,7 @@
  function tkoma($x){
   $str = stristr($x,",");
   $ex = explode(',',$x);
-  //var_dump(($ex));
+
   if (count($ex)>1) {
   	if(($ex[1]/10) >= 1){
    $a = abs($ex[1]);
@@ -41,7 +41,7 @@
   $a2 = $ex[1]/10;
   $pjg = strlen($str);
   $i =1;
-    
+  $a=0; //iniii
   
   if($a>=1 && $a< 12){   
    $temp .= " ".$string[$a];
@@ -67,13 +67,15 @@
   $str = stristr($x,",");
   $ex = explode(',',$x);
 
+  $poin = trim(tkoma($x)); //iniiii
   if($x<0){
-   $hasil = "minus ".trim(konversi(x));
+   $hasil = "minus ".trim(konversi($x));
   }elseif($ex){
    $poin = trim(tkoma($x));
    $hasil = trim(konversi($x));
   }
-  
+
+$poin = trim(tkoma($x)); //iniii
 if($poin){
    $hasil = $hasil." koma ".$poin;
   }else{

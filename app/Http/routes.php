@@ -21,3 +21,4 @@ Route::get('/', function () {
 
 Route::get('soal2', 'simpan_peserta@index');
 Route::post('simpan', 'simpan_peserta@store');
+Route::get('soal2_1', 'simpan_peserta@show');

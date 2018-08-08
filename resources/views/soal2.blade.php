@@ -47,44 +47,52 @@
 				<div class="well">
 					<form action="simpan" method="POST">
 					  <div class="form-group">
-					    <input type="text" name="nama" class="form-control" placeholder="Nama" >
-					    @if ($errors->has('nama'))
-	                        <span class="invalid-feedback">
-	                            <strong>{{ $errors->first('nama') }}</strong>
-	                        </span>
-                    	@endif
+					    <input type="text" name="nama" class="form-control" placeholder="Nama"
+					      value="{{Request::old('nama')}}" >
+					    
 					  </div>
 					  <div class="form-group">
-					    <input type="text" name="nik" class="form-control" placeholder="NIK">
+					    <input type="text" name="nik" class="form-control" placeholder="NIK"
+					    value="{{Request::old('nik')}}">
 					  </div>
 					  <div class="form-group">
-					    <input type="text" name="no_hp" class="form-control" placeholder="No.HP">
+					    <input type="text" name="no_hp" class="form-control" placeholder="No.HP"
+					    value="{{Request::old('no_hp')}}">
 					  </div>
 					  <div class="form-group">
-					    <input type="text" name="email" class="form-control" placeholder="Email">
+					    <input type="text" name="email" class="form-control" placeholder="Email"
+					    value="{{Request::old('email')}}">
 					  </div>
 					  <div class="form-group">
-					    <input type="text" name="skema" class="form-control" placeholder="Skema">
+					    <input type="text" name="skema" class="form-control" placeholder="Skema" 
+					    value="{{Request::old('skema')}}">
 					  </div>
 					  <div class="form-group">
-					    <input type="text" name="sertifikasi" class="form-control" placeholder="Sertifikasi">
+					    <input type="text" name="sertifikasi" class="form-control" placeholder="Sertifikasi"
+					    value="{{Request::old('sertifikasi')}}">
 					  </div>
 					  <div class="form-group">
-					    <input type="text" name="tempat_uji_kompetensi" class="form-control" placeholder="Tempat Uji Kompetensi">
+					    <input type="text" name="tempat_uji_kompetensi" class="form-control" placeholder="Tempat Uji Kompetensi"
+					    value="{{Request::old('tempat_uji_kompetensi')}}">
 					  </div>
 					  <div class="form-group">
-					    <input type="text" name="rekomendasi" class="form-control" placeholder="Rekomendasi">
+					    <input type="text" name="rekomendasi" class="form-control" placeholder="Rekomendasi"
+					    value="{{Request::old('rekomendasi')}}">
 					  </div>
 					  <div class="form-group">
 					  	<label>Tanggal Terbit Sertifikasi</label>
-					    <input type="date" name="tgl_terbit_sertifikasi" class="form-control" placeholder="Tanggal terbit sertifikat">
+					    <input type="date" name="tgl_terbit_sertifikasi" class="form-control" 
+					    placeholder="Tanggal terbit sertifikat"
+					    value="{{Request::old('tgl_terbit_sertifikasi')}}">
 					  </div>
 					  <div class="form-group">
 					  	<label>Tanggal Lahir</label>
-					    <input type="date" name="tgl_lahir" class="form-control" placeholder="Tanggal Lahir">
+					    <input type="date" name="tgl_lahir" class="form-control" placeholder="Tanggal Lahir"
+					    value="{{Request::old('tgl_lahir')}}">
 					  </div>
 					  <div class="form-group">
-					    <input type="text" name="organisasi" class="form-control" placeholder="Organisasi">
+					    <input type="text" name="organisasi" class="form-control" placeholder="Organisasi"
+					    value="{{Request::old('organisasi')}}">
 					  </div>
 
 					  <input type="hidden" name="_token" value="{{csrf_token()}}">

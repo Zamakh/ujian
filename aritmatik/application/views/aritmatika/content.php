@@ -71,7 +71,7 @@
 		           data=result.split("||");
 						$("#terbilang").text(data[0]);
 						$("#hasil").text(data[1]);
-						responsiveVoice.speak(data[0],"Indonesian Male");
+						responsiveVoice.speak(data[1],"Indonesian Male");
 		       },
 		       error: function(){
 		           alert("Gagal")

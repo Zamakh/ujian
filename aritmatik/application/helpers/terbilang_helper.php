@@ -38,10 +38,10 @@
   $string = array("nol", "satu", "dua", "tiga", "empat", "lima", "enam", "tujuh", "delapan",   "sembilan","sepuluh", "sebelas");
   $temp = "";
  
-  $a2 = $ex[1]/10;
+  $a2  = $ex[1]/10;
   $pjg = strlen($str);
-  $i =1;
-  $a=0; //iniii
+  $i   =1;
+  $a = abs($ex[1]); //iniii
   
   if($a>=1 && $a< 12){   
    $temp .= " ".$string[$a];
